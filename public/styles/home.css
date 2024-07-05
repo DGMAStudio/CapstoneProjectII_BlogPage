@@ -1,0 +1,78 @@
+.post {
+    background-color: white;
+    padding:20px;
+    border-radius: 20px;
+}
+
+.htitle_label {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.hsummary_label {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.hpublisher_label {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.home_sbtn {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 2px;
+    font-size:30px;
+}
+
+/*POST STYLING*/
+
+.homepost_title {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-size:30px;
+    margin:0px;
+}
+
+.homepost_summary {
+    font-style: normal;
+    font-size:20px;
+    font-weight: lighter;
+}
+
+.homepost_publisher {
+    font-size: 15px;
+}
+
+.dbutton {
+    background-color: rgb(176, 34, 34);
+    border-radius: 10px;
+    color:white;
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+}
+
+.dbutton:hover {
+    background-color: rgb(162, 81, 81);
+}
+
+.home_sbtn {
+    background-color: rgb(25, 82, 126);
+    border-radius: 5px;
+    color:white;
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+}
+
+.home_sbtn:hover {
+    background-color: rgb(69, 100, 123);
+}
+

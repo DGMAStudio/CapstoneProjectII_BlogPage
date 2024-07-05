@@ -1,0 +1,21 @@
+.homepage_title {
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+    letter-spacing: 5px;
+    text-align: center;
+    color:white;
+    font-size:70px;
+    margin:0px;
+}
+
+.home_postcreation_table {
+    background-color: white;
+    padding:20px;
+    border-radius: 20px;
+}
+
+body {
+    background-color: #99c4da;
+    padding:20px;
+}
+

@@ -1,0 +1,46 @@
+<%-include("partials/header.ejs")%>
+<br/>
+    <ul style="list-style-type: none;">
+      <li>
+        <div class="home_postcreation_table">
+        <form action="/" method="POST">
+          <label class="htitle_label" for="home_title">ENTER TITLE</label><br/>
+          <input type="text" class="home_title" name="home_title" size="100" autofocus required style="border-radius: 5px; height:30px;"><br/><br/>
+      
+          <label class="hsummary_label" for="home_summary">ENTER SUMMARY</label><br/>
+          <textarea class="home_summary" name="home_summary" rows="15" cols="80" style="resize: none;" required style="border-radius: 5px;">
+          </textarea><br/><br/>
+      
+          <label class="hpublisher_label" for="home_publisher">ENTER PUBLISHER'S NAME</label><br/>
+          <input type="text" class="home_publisher" name="home_publisher" size="100" required style="border-radius: 5px;"><br/><br/>
+      
+          <input type="submit" value="PUBLISH" class="home_sbtn"><br/>
+        </form>
+        </div>
+      </li>
+    </ul>
+
+
+
+<%if(locals.posts) {%>
+<ul id="postsList" style="list-style-type: none;">
+    <% for(let i = 0; i < posts.length; i++) {%>
+      <li class="post">
+        <h2 class="homepost_title"><%=posts[i].title%></h2>
+        <hr/>
+        <div class="hp_summ">
+          <h3><p class="homepost_summary"><%=posts[i].summary%></p></h3>
+        </div>
+        <small class="homepost_publisher">PUBLISHER: <%=posts[i].publisher%></small><br/><br/>
+        <form action="/delete" method="POST">
+          <input type="submit" value="DELETE<%i%>" class="dbutton" name="dbutton">
+        </form>
+      </li>
+      <br/>
+      <% }; %>
+  </ul>
+<%}%>
+      
+
+</body>
+</html>
